@@ -32,7 +32,7 @@ namespace Snake_Game
         public Game(ref Timer timer, ref Label label, ref Panel panel); //contrutor para referenciar e refletir no formulário
         PnTela = panel; // recebendo os valores
             Frame = timer; // recebendo os valores
-            LbPontuacao = label;// recebendo os valores
+            LbPontuacao = Label;// recebendo os valores
 
             offScreenBitmap = new Bitmap(428,428); //criando as medidas da tela
         Snake = new Snake();//iniciando classes
