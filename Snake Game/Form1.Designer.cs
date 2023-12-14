@@ -82,12 +82,18 @@
             this.iniciarJogoToolStripMenuItem.Name = "iniciarJogoToolStripMenuItem";
             this.iniciarJogoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarJogoToolStripMenuItem.Text = "Iniciar Jogo";
+            this.iniciarJogoToolStripMenuItem.Click += new System.EventHandler(this.iniciarJogoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // Frame
+            // 
+            this.Frame.Tick += new System.EventHandler(this.Frame_Tick);
             // 
             // Form1
             // 
@@ -106,6 +112,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Snake 2";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Clicado);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
