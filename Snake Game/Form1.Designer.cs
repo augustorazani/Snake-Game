@@ -42,6 +42,7 @@
             // 
             // PnTela
             // 
+            this.PnTela.BackColor = System.Drawing.Color.Silver;
             this.PnTela.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnTela.Location = new System.Drawing.Point(7, 63);
             this.PnTela.Name = "PnTela";
@@ -80,14 +81,14 @@
             // iniciarJogoToolStripMenuItem
             // 
             this.iniciarJogoToolStripMenuItem.Name = "iniciarJogoToolStripMenuItem";
-            this.iniciarJogoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.iniciarJogoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarJogoToolStripMenuItem.Text = "Iniciar Jogo";
             this.iniciarJogoToolStripMenuItem.Click += new System.EventHandler(this.iniciarJogoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -99,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(441, 498);
             this.Controls.Add(this.LbPontuacao);
             this.Controls.Add(this.PnTela);
@@ -110,7 +112,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Snake 2";
+            this.Text = "Snake Game";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Clicado);
             this.menuStrip1.ResumeLayout(false);

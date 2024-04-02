@@ -89,11 +89,11 @@ namespace Snake_Game
             {
                 if (i == 0)
                 {
-                    bitmapGraph.FillEllipse(new SolidBrush(ColorTranslator.FromHtml("#000000")), (Snake.Location[i].X * 15), (Snake.Location[i].Y * 15), 15, 15); //acessa a imagem enviada como RECURSO
+                    bitmapGraph.FillEllipse(new SolidBrush(ColorTranslator.FromHtml("#006400")), (Snake.Location[i].X * 15), (Snake.Location[i].Y * 15), 15, 15); //acessa a imagem enviada como RECURSO
                 }
                 else
                 {
-                    bitmapGraph.FillEllipse(new SolidBrush(ColorTranslator.FromHtml("#4F4F4F")), (Snake.Location[i].X * 15), (Snake.Location[i].Y * 15), 15, 15);
+                    bitmapGraph.FillEllipse(new SolidBrush(ColorTranslator.FromHtml("#00FF00")), (Snake.Location[i].X * 15), (Snake.Location[i].Y * 15), 15, 15);
                 }
 
                 if ((Snake.Location[i] == Snake.Location[0]) && (i > 0))
@@ -118,7 +118,7 @@ namespace Snake_Game
             {
                 Snake.Eat();
                 Food.CreateFood();
-                pontos += 9;
+                pontos += 10;
                 LbPontuacao.Text = "PONTOS: " + pontos;
             }
         } //verifica colisão da cabeça com o corpo
