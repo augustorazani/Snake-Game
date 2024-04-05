@@ -44,28 +44,31 @@
             // 
             this.PnTela.BackColor = System.Drawing.Color.Silver;
             this.PnTela.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PnTela.Location = new System.Drawing.Point(7, 63);
+            this.PnTela.Location = new System.Drawing.Point(9, 78);
+            this.PnTela.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PnTela.Name = "PnTela";
-            this.PnTela.Size = new System.Drawing.Size(428, 428);
+            this.PnTela.Size = new System.Drawing.Size(569, 526);
             this.PnTela.TabIndex = 0;
             // 
             // LbPontuacao
             // 
             this.LbPontuacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbPontuacao.Location = new System.Drawing.Point(7, 37);
+            this.LbPontuacao.Location = new System.Drawing.Point(9, 46);
+            this.LbPontuacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LbPontuacao.Name = "LbPontuacao";
-            this.LbPontuacao.Size = new System.Drawing.Size(428, 23);
+            this.LbPontuacao.Size = new System.Drawing.Size(571, 28);
             this.LbPontuacao.TabIndex = 1;
             this.LbPontuacao.Text = "PONTOS: 0 ";
             this.LbPontuacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(441, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(588, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,20 +78,20 @@
             this.iniciarJogoToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(50, 20);
+            this.Menu.Size = new System.Drawing.Size(60, 24);
             this.Menu.Text = "Menu";
             // 
             // iniciarJogoToolStripMenuItem
             // 
             this.iniciarJogoToolStripMenuItem.Name = "iniciarJogoToolStripMenuItem";
-            this.iniciarJogoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iniciarJogoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.iniciarJogoToolStripMenuItem.Text = "Iniciar Jogo";
             this.iniciarJogoToolStripMenuItem.Click += new System.EventHandler(this.iniciarJogoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -98,16 +101,17 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(441, 498);
+            this.ClientSize = new System.Drawing.Size(588, 613);
             this.Controls.Add(this.LbPontuacao);
             this.Controls.Add(this.PnTela);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

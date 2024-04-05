@@ -96,7 +96,7 @@ namespace Snake_Game
                     bitmapGraph.FillEllipse(new SolidBrush(ColorTranslator.FromHtml("#00FF00")), (Snake.Location[i].X * 15), (Snake.Location[i].Y * 15), 15, 15);
                 }
 
-                if ((Snake.Location[i] == Snake.Location[0]) && (i > 0))
+                if ((Snake.Location[i] == Snake.Location[0]) && (i > 0)) //se a localização da cabeça da cobra ocupar a mesma posição do corpo, irá encerrar o jogo
                 {
                     gameOver = true;
                 }   
@@ -130,6 +130,7 @@ namespace Snake_Game
             screenGraph.Dispose();
             LbPontuacao.Text = "PONTOS: 0";
             MessageBox.Show("Game Over");
+
         }
         #endregion
 
